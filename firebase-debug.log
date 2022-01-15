@@ -1,0 +1,60 @@
+[debug] [2022-01-15T16:10:20.403Z] ----------------------------------------------------------------------
+[debug] [2022-01-15T16:10:20.406Z] Command:       /usr/bin/node /usr/bin/firebase init --debug
+[debug] [2022-01-15T16:10:20.407Z] CLI Version:   10.1.0
+[debug] [2022-01-15T16:10:20.407Z] Platform:      linux
+[debug] [2022-01-15T16:10:20.407Z] Node Version:  v14.18.3
+[debug] [2022-01-15T16:10:20.408Z] Time:          Sat Jan 15 2022 19:10:20 GMT+0300 (East Africa Time)
+[debug] [2022-01-15T16:10:20.408Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-15T16:10:20.416Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-15T16:10:20.418Z] > authorizing via signed-in user (jumba.k.mark@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/mark/Frontend/React/linkedin-clone-yt
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-15T16:11:04.433Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-01-15T16:11:05.544Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-01-15T16:11:05.545Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project linkedin-clone-yt-e1f69 (linkedin-clone-yt) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-01-15T16:11:39.221Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-01-15T16:11:39.806Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-01-15T16:11:39.807Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.6.3","browserURL":"https://www.gstatic.com/firebasejs/9.6.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.6.3/firebase.tgz"},"live":{"version":"9.6","browserURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.6.3/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.6.3/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.6.3/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.6.3/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.6.3/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.6.3/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.6.3/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.6.3/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.6.3/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.6.3/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.6.3/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.6.3/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore.memory.js"}}
+[info] ✔  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at /home/mark/Frontend/React/linkedin-clone-yt 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=757874263&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-01-15T16:12:52.070Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"83a679282fca25a07134","redirect_uri":"http://localhost:9005","state":"757874263"}
+[debug] [2022-01-15T16:12:58.165Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sat, 15 Jan 2022 16:12:57 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"5b2473c42b05f8eb0d541add1fa93821\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"9DCE:1FF8:DD3B5D:F0472D:61E2F289"}
+[debug] [2022-01-15T16:12:58.177Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-01-15T16:12:59.725Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-01-15T16:12:59.726Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"jumbamark","id":78656238,"node_id":"MDQ6VXNlcjc4NjU2MjM4","avatar_url":"https://avatars.githubusercontent.com/u/78656238?v=4","gravatar_id":"","url":"https://api.github.com/users/jumbamark","html_url":"https://github.com/jumbamark","followers_url":"https://api.github.com/users/jumbamark/followers","following_url":"https://api.github.com/users/jumbamark/following{/other_user}","gists_url":"https://api.github.com/users/jumbamark/gists{/gist_id}","starred_url":"https://api.github.com/users/jumbamark/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jumbamark/subscriptions","organizations_url":"https://api.github.com/users/jumbamark/orgs","repos_url":"https://api.github.com/users/jumbamark/repos","events_url":"https://api.github.com/users/jumbamark/events{/privacy}","received_events_url":"https://api.github.com/users/jumbamark/received_events","type":"User","site_admin":false,"name":"Mark Jumba","company":null,"blog":"","location":"Nairobi","email":null,"hireable":null,"bio":null,"twitter_username":"_jumbamark_","public_repos":5,"public_gists":0,"followers":4,"following":10,"created_at":"2021-02-06T16:51:05Z","updated_at":"2021-12-13T15:09:15Z","private_gists":2,"total_private_repos":0,"owned_private_repos":0,"disk_usage":5502,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as jumbamark 
+[info] 
